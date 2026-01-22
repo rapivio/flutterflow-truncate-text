@@ -1,1 +1,25 @@
-test
+import 'dart:convert';
+import 'dart:math' as math;
+
+import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:intl/intl.dart';
+import 'package:timeago/timeago.dart' as timeago;
+import '/flutter_flow/custom_functions.dart';
+import '/flutter_flow/lat_lng.dart';
+import '/flutter_flow/place.dart';
+import '/flutter_flow/uploaded_file.dart';
+
+String truncateText(
+  int maxChars,
+  String input,
+) {
+  /// MODIFY CODE ONLY BELOW THIS LINE
+
+  if (maxChars <= 0) return '';
+  if (input.isEmpty) return '';
+  if (input.length <= maxChars) return input;
+  return '${input.substring(0, maxChars)}...';
+
+  /// MODIFY CODE ONLY ABOVE THIS LINE
+}
